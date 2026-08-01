@@ -1,3 +1,6 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -5,42 +8,91 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
     color:#333;
 }
 
-header{
-    background:#0066cc;
+/* Navbar */
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    font-size:16px;
+    margin-left:12px;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#4f9bff);
     color:white;
     text-align:center;
-    padding:20px;
+    padding:100px 20px;
 }
 
-main{
-    text-align:center;
-    padding:40px 20px;
+.hero h1{
+    font-size:50px;
+    font-weight:700;
 }
 
-h2{
+.hero p{
+    font-size:20px;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+
+/* Feature Cards */
+.feature-box{
+    background:#fff;
+    border-radius:15px;
+    padding:30px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+    height:100%;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.feature-box h3{
+    color:#0d6efd;
     margin-bottom:15px;
 }
 
-p{
-    margin-bottom:20px;
-    font-size:18px;
+.feature-box p{
+    color:#666;
 }
 
-button{
-    background:#0066cc;
-    color:white;
-    border:none;
-    padding:12px 24px;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
+/* Footer */
+footer{
+    margin-top:40px;
 }
 
-button:hover{
-    background:#004c99;
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+padding:70px 15px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.navbar-brand{
+font-size:24px;
+}
+
 }
